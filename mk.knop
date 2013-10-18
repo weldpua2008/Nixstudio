@@ -1,0 +1,6 @@
+#!/bin/bash
+#mkisofs -R -U -V "KNOPPIX.net filesystem" -P "KNOPPIX www.knoppix.net" -hide-rr-moved -cache-inodes -no-bak -pad /mnt/hda2/KO/| nice -n-10 /usr/bin/create_compressed_fs - 65536> /mnt/hda2/KNOPPIX
+#mkisofs -R /mnt/hda2/KO/|create_compressed_fs - 65536 >/mnt/hda2/KnoppixCD/KNOPPIX/KNOPPIX
+mkisofs -R /mnt/hda2/KNOPPIX/|create_compressed_fs - 65536 >/mnt/hda2/KnoppixCD/KNOPPIX/KNOPPIX
+
+./mk.knoppix.sh

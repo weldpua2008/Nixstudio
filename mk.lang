@@ -1,0 +1,3 @@
+#!/bin/bash
+export LANG="ru_RU.KOI8-R"
+export LC_ALL="ru_RU.KOI8-R"
